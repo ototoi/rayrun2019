@@ -55,3 +55,30 @@ project "refimp"
 		"src/rayrun.hpp",
 	}
 	cppdialect "C++17"
+
+-- 
+project "oximp"
+	kind "SharedLib"
+	language "C++"
+	characterset "MBCS"
+	files {
+		"src/oximpl.cpp",
+		"src/rayrun.hpp",
+	}
+	includedirs {
+		"thirdparty/glm/",
+	}
+	cppdialect "C++17"
+
+project "oyimp"
+	kind "SharedLib"
+	language "C++"
+	characterset "MBCS"
+	files {
+		"src/oyimpl.cpp",
+		"src/rayrun.hpp",
+	}
+	includedirs {
+		"thirdparty/glm/",
+	}
+	cppdialect "C++17"
